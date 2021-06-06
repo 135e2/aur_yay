@@ -14,7 +14,7 @@ optdepends=(
   'sudo'
 )
 makedepends=(
-  'go'
+  'gcc-go'
 )
 source=("${pkgname}-${pkgver}.tar.gz::https://github.com/Jguer/yay/archive/v${pkgver}.tar.gz")
 sha256sums=('1782cd4f96c56cc3c92b9fc904873a15a95aecba09dc22c8a6a37a092a1d20cf')
