@@ -32,6 +32,7 @@ build() {
   export CGO_CXXFLAGS="${CXXFLAGS}"
   export CGO_LDFLAGS="${LDFLAGS}"
   export CGO_ENABLED=1
+  export EXTRA_FLAGS="-buildmode=pie -buildvcs=false"
 
   cd "$srcdir/$pkgname-$pkgver"
   make VERSION=$pkgver DESTDIR="$pkgdir" PREFIX="/usr" build
