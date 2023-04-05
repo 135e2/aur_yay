@@ -15,7 +15,9 @@ optdepends=(
   'sudo: privilege elevation'
   'doas: privilege elevation'
 )
-makedepends=('gcc-go>=11.1.0')
+makedepends=(
+  'go'
+)
 options=(!lto)
 source=("${pkgname}-${pkgver}.tar.gz::https://github.com/Jguer/yay/archive/v${pkgver}.tar.gz")
 sha256sums=('cdf558f351f3b40092a5a52ac6382f2363dd8a6f59a00e9caa12df11a78a80ea')
